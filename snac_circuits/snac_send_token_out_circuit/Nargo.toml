@@ -1,0 +1,6 @@
+[package]
+name = "snac_send_token_out_circuit"
+type = "bin"
+authors = [""]
+
+[dependencies]

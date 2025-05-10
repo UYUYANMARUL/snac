@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib", "dependencies"]
+fs_permissions = [{ access = "read", path = "src/proof.json"},{ access = "read", path = "src/proofSendOut.json"},{ access = "read", path = "src/proofSendIn.json"}]
+optimizer        = true          # enables solc optimizer
+optimizer_runs   = 20_000        # adjust optimizer runs as needed
+via_ir           = false  
+
+[dependencies]
+forge-std = "1.9.7"
+"@openzeppelin-contracts" = "5.0.2"
+
+
+[rpc_endpoints]
+holesky = "${HOLESKY_RPC_URL}"
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

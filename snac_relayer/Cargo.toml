@@ -1,0 +1,26 @@
+[package]
+name = "snac_relayer"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+alloy-primitives = { version = "1.1.0", features = ["rlp","serde"] }
+alloy-rlp = { version = "0.3.8", features = ["derive"] }
+futures-lite = "2.6.0"
+hashbrown = "0.14.0"
+keccak-hash = "0.10.0"
+tokio={version="1.41.0",features=["full"]}
+ethers = "2.0.14"
+anyhow = "1.0.97"
+etcommon-rlp = "0.2.5"
+alloy-eips="0.15.9"
+alloy-trie = "0.8.1"
+alloy-consensus="0.15.9"
+url = "2.5.0"
+sha3="0.10.8"
+hex="0.4.3"
+hex-macro="0.1.0"
+rand={version="0.9.1",features=["thread_rng"]}
+futures="0.3.31"
+ethers-providers = { version = "2.0", features = ["ws"] }
